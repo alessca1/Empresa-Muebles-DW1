@@ -10,7 +10,7 @@ Creamos sillones únicos que fusionan diseño vanguardista con la máxima comodi
 
 Se utilizó Figma como herramienta de diseño.
 
-Tecnologias usadas: Html,Css,Boostrap 5.
+Tecnologias Front: Html,Css,Boostrap 5.
 
 
 **Autores:**
