@@ -125,10 +125,46 @@ input[type="submit"] {
 .left {
   left: 20px;
 }
-
+.footer {
+  background-color: #ECCB7F;
+  padding: 20px;
+  color: black;
+}
+.footer .contact-info {
+  margin-bottom: 10px;
+}
+.footer .social-icons a {
+  color: black;
+  margin-right: 10px;
+}
 .right {
   right: 20px;
 }
 .bg-amarillo {
   background-color: #ECCB7F; 
+}
+.contact-section {
+  background-color: #1a2b44;
+  color: #f5a623;
+  padding: 20px;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.contact-form {
+  background-color: #8aa2b5;
+  padding: 20px;
+  border-radius: 5px;
+}
+.contact-form label {
+  color: #f5a623;
+}
+.contact-form .form-control {
+  margin-bottom: 10px;
+}
+.contact-form button {
+  background-color: black;
+  color: white;
+  width: 100%;
 }

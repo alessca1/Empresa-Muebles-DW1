@@ -6,7 +6,7 @@
     <title>Poltron</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylep.css">
 </head>
 <body class="boddy">
   <nav class="navbar navbar-expand-lg fixed-top bg-amarillo">
@@ -32,8 +32,7 @@
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="carrito.html">
               <i class="bi 
-   bi-cart-fill"></i>
-              <span class="badge bg-danger">3</span>
+    bi-cart-fill"></i>
             </a>
           </li>
         </ul>
@@ -46,114 +45,170 @@
           <h1>P R O D U C T O S</h1>
         </div>
       </section>
-
-      <section class="product-filter">
-        <h2 style="color: #fff;">Filtrar productos</h2>
-        <div class="filter-group">
-          <label for="material" style="color: #fff;">Material:</label>
-          <select id="material" name="material">
-            <option value="all">Todos</option>
-            <option value="wood">Madera</option>
-            <option value="metal">Metal</option>
-            <option value="plastic">Plástico</option>
-          </select>
+      <div class="d-flex justify-content-between mb-3 filtross bg-amarillo">
+        <div>
+         <span>
+          Mostrar:
+         </span>
+         <a href="#">
+          1
+         </a>
+         |
+         <a href="#">
+          2
+         </a>
+         |
+         <a href="#">
+          3
+         </a>
         </div>
-        <div class="filter-group">
-          <label for="tapiceria" style="color: #fff;">Tapicería:</label>
-          <select id="tapiceria" name="tapiceria">
-            <option value="all">Todos</option>
-            <option value="leather">Cuero</option>
-            <option value="fabric">Tela</option>
-            <option value="vinyl">Vinilo</option>
-          </select>
+        <div>
+         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="filterButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Ordenar por popularidad
+         </button>
+         <ul class="dropdown-menu" aria-labelledby="filterButton">
+          <li>
+           <a class="dropdown-item" href="#">
+            Popularidad
+           </a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="#">
+            Precio: bajo a alto
+           </a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="#">
+            Precio: alto a bajo
+           </a>
+          </li>
+         </ul>
         </div>
-        <div class="filter-group">
-          <label for="price" style="color: #fff;">Precio:</label>
-          <select id="tapiceria" name="tapiceria">
-            <option value="all">Menor Precio</option>
-            <option value="leather">Mayor precio</option>
-            <option value="fabric">Hasta $100000</option>
-
-          </select>
-          
-        </div>
-      </section>
-
-      <div class="product-container">
-        <div class="product">
-          <img src="img/mistral.webp" alt="Sillón Mistral">
-          <h3>Sillón Mistral</h3>
-          <button>Agregar al carrito</button>
-        </div><div class="product">
-          <img src="img/perla.webp" alt="Sillón Mistral">
-          <h3>Sillón Mistral</h3>
-          <button>Agregar al carrito</button>
-        </div><div class="product">
-          <img src="img/rubi (2).webp" alt="Sillón Mistral">
-          <h3>Sillón Mistral</h3>
-          <button>Agregar al carrito</button>
-        </div>
-        </div><div class="product-containerr">
-          <div class="product">
-            <img src="img/sabana.webp" alt="Sillón Mistral">
-            <h3>Sillón Mistral</h3>
-            <button>Agregar al carrito</button>
-          </div><div class="product">
-            <img src="img/luzio.webp" alt="Sillón Mistral">
-            <h3>Sillón Mistral</h3>
-            <button>Agregar al carrito</button>
-          </div><div class="product">
-            <img src="img/aura.webp" alt="Sillón Mistral">
-            <h3>Sillón Mistral</h3>
-            <button>Agregar al carrito</button>
+       </div>
+        <div id="carouselProducts" class="carousel slide carousel-fade carousel-color">
+        <div class="carousel-inner">
+          <div class="carousel-item active"  style="margin-bottom:30px ;">
+            <div class="card-cont">
+              <div class="container text-center ">
+                  <div class="row">
+                      <div class="col order-last">
+                          <div class="card" style="width: 18rem; height: 22rem;">
+                              <img src="img/aster.webp" class="card-img-top" alt="Cocina">
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">COCINA</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card" style="width: 18rem; height: 22rem;">
+                              <img src="img/kade.webp" class="card-img-top" alt="Sala">
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">SALA</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col order-first">
+                          <div class="card" style="width: 18rem; height: 22rem;">
+                              <img src="img/luzio.webp" class="card-img-top" alt="Comedor">
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary" style="margin: auto;">COMEDOR</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
           </div>
-        
-          </div></div><div class="product-containerrrrr">
-            <div class="product">
-              <img src="img/aster.webp" alt="Sillón Mistral">
-              <h3>Sillón Mistral</h3>
-              <button>Agregar al carrito</button>
-            </div><div class="product">
-              <img src="img/trax.webp" alt="Sillón Mistral">
-              <h3>Sillón Mistral</h3>
-              <button>Agregar al carrito</button>
-            </div><div class="product">
-              <img src="img/kade.webp" alt="Sillón Mistral">
-              <h3>Sillón Mistral</h3>
-              <button>Agregar al carrito</button>
+          <div class="carousel-item">
+            <div class="card-cont">
+              <div class="container text-center">
+                  <div class="row">
+                      <div class="col order-last">
+                          <div class="card" style="width: 18rem; height: 22rem;">
+                              <img src="img/perla.webp" class="card-img-top" alt="Jardín y Exteriores">
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">JARDÍN Y EXTERIORES</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card" style="width: 18rem; height: 22rem;">
+                              <img src="img/sabana.webp" class="card-img-top" alt="Baño">
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">BAÑO</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col order-first">
+                          <div class="card" style="width: 18rem; height: 22rem;">
+                              <img src="img/trax.webp" class="card-img-top" alt="Dormitorio">
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">DORMITORIO</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
-            </div></div></div>
-              
-            <div class="card-container">
-            </div>
-        <div class="pagination">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducts" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProducts" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
+      <div class="texto">
+        <p style="color:#ECCB7F; display: flex; justify-content:center; font-size: 1.4rem;  margin-top:30px; padding: 0;" >
+          ¿Estabas pensando en comprar un sofá? Acá vas a encontrar sofás de 2 cuerpos y de 3 cuerpos de distintos colores, telas, diseños y materiales. En dellacasa tenemos una gran variedad de sillones para tu hogar. ¡Elegí el tuyo!
+        </p>
+      </div>
         
 
-          <footer class="container-fluid text-dark footerr">
-            <div class="row">
-                <div class="col-md-6">
-                    <p><strong>Dirección:</strong> Calle falsa 123</p>
-                    <p><strong>Código postal:</strong> 5400</p>
-                    <p><strong>Horario:</strong> Lun-Vie 9:00 - 21:00hs</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <img src="img/Captura de pantalla 2024-11-04 164304.png" alt="Código QR" width="100" >
-                    <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi  
-         bi-facebook"></i></a>
-                    <p><strong>Teléfono:</strong> 26453920452</p>
-                    <p><strong>Email:</strong> Poltron@gmail.com</p>
-                </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+           <div class="row">
+            <div class="col-md-6 contact-info">
+             <p>
+              Direccion: Calle falsa 123
+             </p>
+             <p>
+              Codigo postal: 5400
+             </p>
+             <p>
+              Horario: Lun-Vie 9:00 - 21:00hs
+             </p>
             </div>
-        </footer>
+            <div class="col-md-6 text-end">
+             <div class="social-icons">
+              <a href="tel:26458920452">
+               <i class="fas fa-phone">
+               </i>
+               26458920452
+              </a>
+              <br/>
+              <a href="https://www.facebook.com/Poltron.Sillones">
+               <i class="fab fa-facebook">
+               </i>
+               Poltron.Sillones
+              </a>
+              <br/>
+              <a href="mailto:Poltron@gmail.com">
+               <i class="fas fa-envelope">
+               </i>
+               Poltron@gmail.com
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+    </footer>
 
 
     
