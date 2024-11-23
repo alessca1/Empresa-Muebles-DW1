@@ -33,6 +33,7 @@
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 5%;  
 }
 .filter-section {
   text-align: left;
@@ -105,22 +106,22 @@
   font-size: 24px;
 }
 .footer {
-    background-color: #ECCB7F;
-    padding: 20px;
-    color: black;
-  }
-  .footer .contact-info {
-    margin-bottom: 10px;
-  }
-  .footer .social-icons a {
-    color: black;
-    margin-right: 10px;
-  }
+  background-color: #ECCB7F;
+  padding: 20px;
+  color: black;
+}
+.footer .contact-info {
+  margin-bottom: 10px;
+}
+.footer .social-icons a {
+  color: black;
+  margin-right: 10px;
+}
 
 .carousel-color{
-    background-color: #ECCB7F;
-    margin-top: -16px;
-    margin-bottom: -20px;
+  background-color: #ECCB7F;
+  margin-top: -16px;
+  margin-bottom: -20px;
 
 }
 .footerr {
@@ -149,7 +150,8 @@
   font-family: "Alata", sans-serif !important;
   font-size: 4rem;
   z-index: 1; 
-}.hero-text h1{
+}
+.hero-text h1{
   
   font-family: "Alata", sans-serif !important;
    
